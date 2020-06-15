@@ -75,7 +75,6 @@ class _MyHomePageState extends State<MyHomePage> {
                   Row(
                     children: <Widget>[
                       Expanded(
-                        flex: 2,
                         child: RaisedButton(
                           onPressed: () {
                             if (_formKey.currentState.validate()) {
