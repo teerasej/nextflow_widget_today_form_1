@@ -29,7 +29,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
 
-  final _formKey = GlobalKey<FormState>();
+ 
 
   @override
   Widget build(BuildContext context) {
@@ -39,56 +39,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
         body: Container(
           padding: EdgeInsets.all(10),
-          child: Form(
-              key: _formKey,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: <Widget>[
-                  SizedBox(
-                    height: 15,
-                  ),
-                  Text('Email:'),
-                  TextFormField(
-                    validator: (String input) {
-                      if(input.isEmpty) {
-                        return "อย่าลืมกรอก Email!";
-                      }
-                      return null;
-                    },
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  Text('รหัสผ่าน:'),
-                  TextFormField(
-                    obscureText: true,
-                    validator: (String input) {
-                      if(input.isEmpty) {
-                        return "อย่าลืมกรอกรหัสผ่าน!";
-                      }
-                      return null;
-                    },
-                  ),
-                  SizedBox(
-                    height: 15,
-                  ),
-                  Row(
-                    children: <Widget>[
-                      Expanded(
-                        flex: 2,
-                        child: RaisedButton(
-                          onPressed: () {
-                            if (_formKey.currentState.validate()) {
-                              // go go go
-                            }
-                          },
-                          child: Text('ลงทะเบียน'),
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              )),
+          child: Container()
         ));
   }
 }
