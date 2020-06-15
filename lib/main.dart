@@ -87,19 +87,6 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ],
                   ),
-                  Row(
-                    children: <Widget>[
-                      Expanded(
-                        flex: 2,
-                        child: OutlineButton(
-                          onPressed: () {
-                            _formKey.currentState.reset();
-                          },
-                          child: Text('ล้างข้อมูล'),
-                        ),
-                      ),
-                    ],
-                  )
                 ],
               )),
         ));
