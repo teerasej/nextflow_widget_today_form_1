@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nextflow_thai_personal_id/nextflow_thai_personal_id.dart';
 
 void main() {
   runApp(MyApp());
@@ -30,6 +31,7 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
 
   final _formKey = GlobalKey<FormState>();
+  ThaiIdValidator thaiIdValidator = ThaiIdValidator(errorMessage: 'เลขประจำตัวไม่ถูกต้อง กรุณาตรวจสอบอีกครั้ง');
 
   @override
   Widget build(BuildContext context) {
@@ -75,6 +77,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Text('เลขประจำตัวประชาชน:'),
                   TextFormField(
                     maxLength: 13,
+                    validator: thaiIdValidator.validate,
                   ),
                   SizedBox(
                     height: 15,
