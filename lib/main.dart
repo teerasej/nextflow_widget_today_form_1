@@ -72,6 +72,13 @@ class _MyHomePageState extends State<MyHomePage> {
                   SizedBox(
                     height: 15,
                   ),
+                  Text('เลขประจำตัวประชาชน:'),
+                  TextFormField(
+                    maxLength: 13,
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
                   Row(
                     children: <Widget>[
                       Expanded(
