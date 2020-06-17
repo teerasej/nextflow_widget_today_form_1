@@ -1,16 +1,23 @@
-# nextflow_widget_today_form
+# Flutter 3 นาทีกับโค้ชพล: สร้าง Form จริงจัง และ validate ความถูกต้องของข้อมูลใน TextFormField
 
-A new Flutter project.
+โปรเจค Flutter สำหรับฝึกฝนเรียนรู้การใช้งาน Flutter กับโค้ชพลนะครับ ในรอบนี้มาสร้าง Form รับข้อมูลตั้งแต่เริ่มต้นกัน โดยจะมีการใช้ Widget แบบต่างๆ หลายตัว พร้อมการตรวจสอบข้อมูล (Validation) ใน Form ด้วย
 
-## Getting Started
+- วิธีสร้าง `Form`
+- วิธีใช้ `TextFormField`
+- การกำหนดให้ซ่อนรหัสผ่านด้วย `obscureText`
+- การสร้างและใช้งาน Validation function
+- การสร้าง และใช้งาน FormState Key
+- การควบคุม Form ด้วย Form Key
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
+## ดูคลิปทำตามได้ที่นี่เลย 
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+สามารถกด subscribe ติดตามคลิปเรื่อง Flutter และคลิปใหม่ๆ ได้ผ่านช่อง Youtube ของโค้ชพลนะครับ 
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+https://youtu.be/3G0xE0musUg
+
+## เริ่มต้นเรียนรู้สร้างแอพ iOS และ Android ด้วย Google Flutter 
+
+ออกแบบให้เข้าใจง่าย ฝึกทำและเรียนรู้จากแอพจริง ดูรายละเอียดและซื้อได้ที่ลิ้งค์ด้านล่างเลยครับ 
+
+https://nextflow.in.th/google-flutter-online/
