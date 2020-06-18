@@ -9,12 +9,18 @@
 - การสร้าง และใช้งาน FormState Key
 - การควบคุม Form ด้วย Form Key
 
+## ตอนที่ 2 การล้างข้อมูลใน Form
+
+- การใช้ FormKey ควบคุมข้อมูลใน Form
+- การใช้ `reset()` ของ FormState ในการล้างข้อมูลใน TextFormField 
+
 
 ## ดูคลิปทำตามได้ที่นี่เลย 
 
 สามารถกด subscribe ติดตามคลิปเรื่อง Flutter และคลิปใหม่ๆ ได้ผ่านช่อง Youtube ของโค้ชพลนะครับ 
 
-https://youtu.be/3G0xE0musUg
+- ตอนที่ 1 สร้างและ validate ข้อมูลใน Form: https://youtu.be/3G0xE0musUg
+- ตอนที่ 2 ล้างข้อมูลใน Form: https://youtu.be/cal9JSDitNM
 
 ## เริ่มต้นเรียนรู้สร้างแอพ iOS และ Android ด้วย Google Flutter 
 
