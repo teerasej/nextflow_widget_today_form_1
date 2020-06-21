@@ -14,6 +14,15 @@
 - การใช้ FormKey ควบคุมข้อมูลใน Form
 - การใช้ `reset()` ของ FormState ในการล้างข้อมูลใน TextFormField 
 
+## ตอนที่ 3 การเช็คเลขบัตรประชาชน 13 หลักด้วย Dart Package
+
+ในคลิปนี้มาใช้ Dart Package ของโค้ชพล ในการตรวจสอบการกรอกข้อมูลรหัสประจำตัวประชาชน 13 หลักกัน ใช้ง่าย ใช้กับ TextFormField ได้ทันทีด้วย
+
+- แนะนำให้รู้จักกับ Dart Package: [Thai Personal ID](https://pub.dev/packages/nextflow_thai_personal_id)
+- การ import ตัว package
+- การกำหนด error message ในกรณีที่กรอกข้อมูลผิด
+- การใช้งาน Validator กับ TextFormField
+
 
 ## ดูคลิปทำตามได้ที่นี่เลย 
 
@@ -21,6 +30,7 @@
 
 - ตอนที่ 1 สร้างและ validate ข้อมูลใน Form: https://youtu.be/3G0xE0musUg
 - ตอนที่ 2 ล้างข้อมูลใน Form: https://youtu.be/cal9JSDitNM
+- ตอนที่ 3 การเช็คเลขบัตรประชาชน 13 หลัก: https://youtu.be/hB4-baWk6lU
 
 ## เริ่มต้นเรียนรู้สร้างแอพ iOS และ Android ด้วย Google Flutter 
 
