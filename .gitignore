@@ -1,4 +1,5 @@
 /.idea
 /pubspec.lock
 build
-.packages
+/.packages
+/package_config.json
