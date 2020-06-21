@@ -29,9 +29,9 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   final _formKey = GlobalKey<FormState>();
-  ThaiIdValidator thaiIdValidator = ThaiIdValidator(errorMessage: 'เลขประจำตัวไม่ถูกต้อง กรุณาตรวจสอบอีกครั้ง');
+  ThaiIdValidator thaiIdValidator = ThaiIdValidator(
+      errorMessage: 'เลขประจำตัวไม่ถูกต้อง กรุณาตรวจสอบอีกครั้ง');
 
   @override
   Widget build(BuildContext context) {
@@ -52,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   Text('Email:'),
                   TextFormField(
                     validator: (String input) {
-                      if(input.isEmpty) {
+                      if (input.isEmpty) {
                         return "อย่าลืมกรอก Email!";
                       }
                       return null;
@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   TextFormField(
                     obscureText: true,
                     validator: (String input) {
-                      if(input.isEmpty) {
+                      if (input.isEmpty) {
                         return "อย่าลืมกรอกรหัสผ่าน!";
                       }
                       return null;
@@ -101,7 +101,27 @@ class _MyHomePageState extends State<MyHomePage> {
                       Expanded(
                         child: OutlineButton(
                           onPressed: () {
-                            _formKey.currentState.reset();
+                            showDialog(
+                                context: context,
+                                builder: (BuildContext context) {
+                                  return AlertDialog(
+                                    title: Text('แน่ใจนะ'),
+                                    content: Text('ข้อมูลทั้งหมดที่กรอกไว้จะถูกลบออกจากฟอร์ม'),
+                                    actions: <Widget>[
+                                      FlatButton(
+                                          onPressed: () {
+                                            _formKey.currentState.reset();
+                                            Navigator.pop(context);
+                                          },
+                                          child: Text('ล้างข้อมูล')),
+                                      FlatButton(
+                                          onPressed: () {
+                                            Navigator.pop(context);
+                                          },
+                                          child: Text('ยกเลิก'))
+                                    ],
+                                  );
+                                });
                           },
                           child: Text('ล้างข้อมูล'),
                         ),
